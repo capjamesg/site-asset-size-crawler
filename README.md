@@ -4,9 +4,9 @@
 
 Measure the size of different assets (i.e. PNG, GIF, MP4) across your entire website.
 
-The `analyze.py` script in this project takes a URL, downloads the associated sitemap, then crawls all pages in the sitemap to find the file sizes of image and video assets. You can use this to find assets that are too large, and how many times those assets are referenced on your website. You can also measure the total weight of image and video assets referenced on each page, allowing you to find pages that may load slowly due to the number of assets referenced.
+The `analyze.py` script in this project takes a URL, downloads the associated sitemap, then crawls all pages in the sitemap to find the file sizes of image and video assets. You can use this to find assets that are larger than they should be, and how many times those assets are referenced on your website. 
 
-This script is intended to help you find opportunities to reduce bandwidth use of image and video assets, and to improve page loading times on your websites.
+You can also measure the total weight of image and video assets referenced on each page, allowing you to find pages that may load slowly due to the number of assets referenced.
 
 ## Installatoin
 
