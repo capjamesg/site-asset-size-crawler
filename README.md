@@ -8,7 +8,9 @@ The `analyze.py` script in this project takes a URL, downloads the associated si
 
 You can also measure the total weight of image and video assets referenced on each page, allowing you to find pages that may load slowly due to the number of assets referenced.
 
-## Installatoin
+This tool sends `HEAD` requests to each asset URL to get the file size from a `Content-Length` header. This means that you can measure file sizes without having to download them.
+
+## Installation
 
 To get started, clone this project repository and install the required dependencies:
 
@@ -33,9 +35,11 @@ Where `https://example.com` is either:
 
 The script creates a few files.
 
-- `assets_by_size.txt`: A list of images and videos found, listed in descending order by file size.
-- `assets_by_use.txt`: A list of images and videos found, listed in descending order of the number of pages on which the image was referenced.
-- `potential_optimizations.txt`: A list of images and videos > 200 KB in size and that are used on more than 10% of pages. Ordered by number of pages on which an asset appears. This list is ideal if you are managing a large site where you want to find the largest images and videos that are most used.
+- `assets_by_size.csv`: A list of images and videos found, listed in descending order by file size.
+- `assets_by_use.csv`: A list of images and videos found, listed in descending order of the number of pages on which the image was referenced.
+- `potential_optimizations.csv`: A list of images and videos > 200 KB in size.
+- `pages_by_asset_size.csv`: A list of pages, listed in descending order by the total size of assets referenced on the page.
+- `results.json`: Stores the URLs analyzed and asset sizes by page as a JSON file.
 
 ## License
 
