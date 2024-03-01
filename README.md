@@ -31,9 +31,9 @@ Where `https://example.com` is either:
 
 The script creates a few files.
 
-- `images_by_size.txt`: A list of images found, listed in descending order by file size.
-- `images_by_use.txt`: A list of images found, listed in descending order of the number of pages on which the image was referenced.
-- `potential_optimizations.txt`: A list of images > 200 KB in size and that are used on more than 10% of pages. Ordered by number of pages on which an asset appears. This list is ideal if you are managing a large site where you want to find the largest images that are most used.
+- `assets_by_size.txt`: A list of images and videos found, listed in descending order by file size.
+- `assets_by_use.txt`: A list of images and videos found, listed in descending order of the number of pages on which the image was referenced.
+- `potential_optimizations.txt`: A list of images and videos > 200 KB in size and that are used on more than 10% of pages. Ordered by number of pages on which an asset appears. This list is ideal if you are managing a large site where you want to find the largest images and videos that are most used.
 
 ## License
 
