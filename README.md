@@ -8,7 +8,7 @@ The `analyze.py` script in this project takes a URL, downloads the associated si
 
 This script is intended to help you find opportunities to reduce bandwidth use of image and video assets, and to improve page loading times on your websites.
 
-## Getting started
+## Installatoin
 
 To get started, clone this project repository and install the required dependencies:
 
@@ -17,6 +17,8 @@ git clone https://github.com/capjamesg/site-asset-size-crawler
 cd site-asset-size-crawler
 pip3 install -r requirements.txt
 ```
+
+## Usage
 
 To analyze your site, run:
 
